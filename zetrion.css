@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* FUENTES */
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Work+Sans:300,400,500,600,700");
+@font-face {
+    font-family: 'Helion W00';
+    src: url("/fonts/Helion W00 Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* Colores */
+
+:root {
+    --zetrion-200: #f2f7fd;
+    --zetrion-300: #e4edfa;
+    --zetrion-400: #c3daf4;
+    --zetrion-500: #8fbdea;
+    --zetrion-600: #539bdd;
+    --zetrion-700: #2c7ecb;
+    --zetrion-800: #1d62ac;
+    --zetrion-900: #194f8b;
+    --zetrion-100: #17406d;
+    --zetrion-110: #1a3a60;
+    --zetrion-120: #112540;
+}
+
+
+/* Cardztn */
+
+.cardztn {
+    background: white;
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 20px;
+    h1 {
+        font-family: 'Helion W00';
+        text-align: center;
+    }
+}
+
+.cardztn-img {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardztn-vid {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardztn-vid video {
+    border-radius: 20px;
+    display: block;
+}
+
+.cardztn-tag {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    z-index: 5;
+    a {
+        font-family: Helion W00;
+        padding: 0 5px;
+        display: inline-block;
+        height: 20px;
+        border-radius: 10px;
+        background-color: white;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: var(--zetrion-100);
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.75px;
+        &:hover,
+        &:focus {
+            background-color: var(--zetrion-100);
+            color: white;
+        }
+    }
+}
+
+.ztn-header {
+    margin: auto;
+    margin-left: 30%;
+    button {
+        color: whitesmoke;
+        background-color: #17406d;
+        border-color: #17406d;
+    }
+    button:hover {
+        color: whitesmoke;
+        background-color: #1d62ac;
+        border-color: #194f8b;
+    }
+}
+
+.formztn {
+    font: inherit;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Helion W00';
+    color: var(--zetrion-100);
+}
+
+input [type="text"] {
+    width: 100%;
+    border-radius: 20px;
+    border-color: #17406d;
+    border: 3px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: #17406d;
+    color: #c3daf4;
+}
+
+button :hover {
+    background-color: #194f8b;
+    color: whitesmoke;
+}
